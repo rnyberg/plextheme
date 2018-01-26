@@ -418,8 +418,8 @@ a img:hover {
 
 .cell {
     float: left;
-    width: 160px;
-    height: 300px;    
+    width: 300px;
+    height: 490px;    
     margin: 0px 10px 50px 10px;
 }
 
@@ -428,8 +428,8 @@ a img:hover {
 }
 
 .thumb {
-	width: 160px;
-	height: 230px;
+	width: 300px;
+	height: 440px;
 	text-align: center;
 }
 
@@ -876,4 +876,60 @@ font-family: open_sansregular;
     
 	/* font-style: italic
 ; */color: #888888;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.thumb img {
+	transition: all 200ms ease;
+	width: 300px;
+	height: 440px;
+	max-width: 300px;
+	max-height: 440px;
+	object-fit: fill;
+	border: 2px solid #333;
+	transform: scale(1);
+}
+
+.thumb img:hover {
+	border-width: 2px;
+	margin: 0;
+	transform: scale(1.025);
+}
+
+
+.cell {
+	position : relative;
+}
+
+.numberblock {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.numberblock span {
+	line-height: 1;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    padding: 3px 0;
+}
+
+#group {
+	position: absolute;
+	height: calc(100vh - 100px);
+	top: 70px;
+	width: 100vw;
+	left: 0;
+	margin: 0;
+	padding: 15px 0;
+}
+
+.title,
+.label {
+	font-weight: bold;
+	font-size: 150%;
 }
