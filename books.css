@@ -933,3 +933,10 @@ font-family: open_sansregular;
 	font-weight: bold;
 	font-size: 150%;
 }
+
+#bookdetails,
+#settingsbox {
+	zoom: 1.8;
+	top: 2vh;
+	margin: 0 auto;
+}
