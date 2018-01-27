@@ -416,21 +416,8 @@ a img:hover {
 	background-position: 20px center; 
 }
 
-.cell {
-    float: left;
-    width: 300px;
-    height: 490px;    
-    margin: 0px 10px 50px 10px;
-}
-
 .cellcontainer {
 	display: inline-block;
-}
-
-.thumb {
-	width: 300px;
-	height: 440px;
-	text-align: center;
 }
 
 .label {
@@ -884,11 +871,11 @@ font-family: open_sansregular;
 
 .thumb img {
 	transition: all 200ms ease;
-	width: 300px;
-	height: 440px;
-	max-width: 300px;
-	max-height: 440px;
-	object-fit: fill;
+	width: 280px;
+	height: 435px;
+	max-width: 280px;
+	max-height: 435px;
+	object-fit: cover;
 	border: 2px solid #333;
 	transform: scale(1);
 }
@@ -899,23 +886,41 @@ font-family: open_sansregular;
 	transform: scale(1.025);
 }
 
-
 .cell {
 	position : relative;
+    float: left;
+    width: 280px;
+    height: 500px;    
+    margin: 0px 10px 50px 10px;
+}
+.thumb {
+	width: 280px;
+	height: 435px;
+	text-align: center;
 }
 
 .numberblock {
 	position: absolute;
-	top: 5px;
-	right: 5px;
+	top: 3px;
+	right: 3px;
+	zoom: 2;
+	margin: 0;
 }
 
 .numberblock span {
 	line-height: 1;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 14px;
     overflow: hidden;
-    padding: 3px 0;
+	padding: 1px 0;
+	margin: 0;
+	border-radius: 2px;
+	background: #f5f5f5;	
+	color: #333;
+	font-family: inherit;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,.5);
 }
 
 #group {
@@ -931,12 +936,16 @@ font-family: open_sansregular;
 .title,
 .label {
 	font-weight: bold;
-	font-size: 150%;
+	font-size: 122.5%;
 }
 
 #bookdetails,
 #settingsbox {
-	zoom: 1.8;
+	zoom: 1.6;
 	top: 2vh;
 	margin: 0 auto;
+}
+
+#details_cover img {
+	max-width: 100%;
 }
